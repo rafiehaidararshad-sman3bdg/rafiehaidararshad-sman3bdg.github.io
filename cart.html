@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/eyeglasses.png" width="100px">
+			</div>		
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		<a href="cart.html">
+			<img src="images/cart.png" width="30px" height="30px">
+		</a>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+<!----------- cart items details ----------->
+<div class="small-container cart-page">
+	
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/MollucasTortoise1.jpg">
+					<div>
+						<p>Mollucas Arturo Tortoise</p>
+						<small>Price: Rp900.000,-</small>
+						<br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp900.000,-</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/Raito1.jpg">
+					<div>
+						<p>Raito Michi Tengoku</p>
+						<small>Price: Rp1.200.000,-</small>
+						<br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp1.200.000,-</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/Bridges1.jpg">
+					<div>
+						<p>Bridges Helmut</p>
+						<small>Price: Rp1.300.000,-</small>
+						<br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp1.300.000,-</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/Optika1.jpg">
+					<div>
+						<p>Optika Lao Black Matte</p>
+						<small>Price: Rp500.000,-</small>
+						<br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp500.000,-</td>
+		</tr>
+	</table>
+
+	<div class="total-price">
+
+		<table>
+			<tr>
+				<td>Subtotal</td>
+				<td>Rp4.000.000,-</td>
+			</tr>
+			<tr>
+				<td>Tax</td>
+				<td>Rp200.000,-</td>
+			</tr>
+			<tr>
+				<td>Subtotal</td>
+				<td>Rp4.200.000,-</td>
+			</tr>
+		</table>
+		
+	</div>
+
+</div>
+
+<!----------- footer ----------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and IOS mobile Phone</p>
+					<div class="app-logo">
+					<a href="https://www.play.google.com">
+						<img src="images/play-store.png">
+					</a>
+					<a href="https://www.apps.apple.com">
+						<img src="images/app-store.png">
+					</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/eyeglasses.png" height="50px">
+					<p>Tujuan kami adalah melayani Anda dengan sebaik mungkin, jadi jangan ragu untuk memberi kami kritik dan saran.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+					<a href="index.html">
+						<li>Home</li>
+					</a>
+					<a href="about.html">
+						<li>About</li>
+					</a>
+					<a href="products.html">
+						<li>Product</li>
+					</a>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+					<a href="https://www.instagram.com">
+						<li>Instagram</li>
+					</a>
+					<a href="https://www.facebook.com">
+						<li>Facebook</li>
+					</a>
+					<a href="https://www.twitter.com">
+						<li>Twitter</li>
+					</a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - Rafie Haidar</p>
+		</div>
+	</div>
+
+
+<!----------------js for toggle menu---------------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight = "0px")
+				{
+					MenuItems.style.maxHeight = "200px"
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px"
+				}
+		}
+	</script>
+
+
+
+</body>
+</html>

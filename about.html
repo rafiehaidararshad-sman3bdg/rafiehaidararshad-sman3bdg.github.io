@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/eyeglasses.png" width="100px">
+			</div>		
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		<a href="cart.html">
+			<img src="images/cart.png" width="30px" height="30px">
+		</a>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+<!---------- about -------------->
+
+<div class="small-container about">
+	<div class="row-1">
+		<div class="col-1">
+			<h1>About Us</h1>
+			<p>Nama saya Rafie Haidar Arshad (28) Kelas XI MIPA 6. Saya tinggal di Ngamprah, Bandung Barat.</p>
+			<br>
+			<p>source: </p>
+			<br>
+			<ul>
+				<a href="https://www.optikalunett.com/products/lao-black-matte">
+					<li>https://www.optikalunett.com/products/lao-black-matte</li>
+				</a>
+				<a href="https://www.bridgeseyewear.com/en/home/617-helmut?color=1656&gender=men">
+					<li>https://bridgeseyewear.com/en/home/617-helmut?color=1656&gender=men</li>
+				</a>
+				<a href="https://www.justraito.com/en/michi-tengoku-mb01">
+					<li>https://www.justraito.com/en/michi-tengoku-mb01</li>
+				</a>
+				<a href="https://www.mollucas.id/collections/all-styles-1/products/arturo-turtoise?variant=34546677383320">
+					<li>https://www.mollucas.id/collections/all-styles-1/products/arturo-turtoise?variant=34546677383320</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	
+
+
+<!----------- footer ----------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and IOS mobile Phone</p>
+					<div class="app-logo">
+					<a href="https://www.play.google.com">
+						<img src="images/play-store.png">
+					</a>
+					<a href="https://www.apps.apple.com">
+						<img src="images/app-store.png">
+					</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/eyeglasses.png" height="50px">
+					<p>Tujuan kami adalah melayani Anda dengan sebaik mungkin, jadi jangan ragu untuk memberi kami kritik dan saran.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+					<a href="index.html">
+						<li>Home</li>
+					</a>
+					<a href="about.html">
+						<li>About</li>
+					</a>
+					<a href="products.html">
+						<li>Product</li>
+					</a>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+					<a href="https://www.instagram.com">
+						<li>Instagram</li>
+					</a>
+					<a href="https://www.facebook.com">
+						<li>Facebook</li>
+					</a>
+					<a href="https://www.twitter.com">
+						<li>Twitter</li>
+					</a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - Rafie Haidar</p>
+		</div>
+	</div>
+
+
+<!----------------js for toggle menu---------------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight = "0px")
+				{
+					MenuItems.style.maxHeight = "200px"
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px"
+				}
+		}
+	</script>
+
+
+<!-------------- js for product gallery -------------->
+
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img");
+
+			SmallImg[0].onclick = function()
+			{
+				ProductImg.src = SmallImg[0].src;
+			}
+			SmallImg[1].onclick = function()
+			{
+				ProductImg.src = SmallImg[1].src;
+			}
+			SmallImg[2].onclick = function()
+			{
+				ProductImg.src = SmallImg[2].src;
+			}
+			SmallImg[3].onclick = function()
+			{
+				ProductImg.src = SmallImg[3].src;
+			}
+
+	</script>
+
+</body>
+</html>

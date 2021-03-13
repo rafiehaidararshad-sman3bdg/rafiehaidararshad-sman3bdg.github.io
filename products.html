@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>All Products - Glassers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/eyeglasses.png" width="100px">
+			</div>		
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		<a href="cart.html">
+			<img src="images/cart.png" width="30px" height="30px">
+		</a>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+	<div class="small-container">
+
+		<div class="row row-2">
+			<h2>All Products</h2>
+			<select>
+				<option>Default Shorting</option>
+				<option>Short by price</option>
+				<option>Short by popularity</option>
+				<option>Short by rating</option>
+				<option>Short by sell</option>
+			</select>
+		</div>
+
+
+		<div class="row">
+			<div class="col-4">
+			<a href="mollucas.html">
+				<img src="images/MollucasTortoise2.jpg" height="150px" width="200px">
+				<h4>Mollucas Arturo Tortoise</h4>
+			</a>
+				<p>Rp900.000,-</p>
+			</div>
+			<div class="col-4">
+			<a href="raito.html">
+				<img src="images/Raito1.jpg" height="150px" width="200px">
+				<h4>Raito Michi Tengoku</h4>
+			</a>
+				<p>Rp1.200.000,-</p>
+			</div>
+			<div class="col-4">
+			<a href="bridges.html">
+				<img src="images/Bridges1.jpg" height="150px" width="200px">
+				<h4>Bridges Helmut</h4>
+			</a>
+				<p>Rp1.300.000,-</p>
+			</div>
+			<div class="col-4">
+			<a href="optika.html">
+				<img src="images/Optika1.jpg" height="150px" width="200px">
+				<h4>Optika Lao Black Matte</h4>
+			</a>
+				<p>Rp500.000,-</p>
+			</div>
+		</div>
+
+		<div class="page-btn">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>&#8594;</span>
+
+		</div>
+	</div>
+<!----------- footer ----------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and IOS mobile Phone</p>
+					<div class="app-logo">
+					<a href="https://www.play.google.com">
+						<img src="images/play-store.png">
+					</a>
+					<a href="https://www.apps.apple.com">
+						<img src="images/app-store.png">
+					</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/eyeglasses.png" height="50px">
+					<p>Tujuan kami adalah melayani Anda dengan sebaik mungkin, jadi jangan ragu untuk memberi kami kritik dan saran.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+					<a href="index.html">
+						<li>Home</li>
+					</a>
+					<a href="about.html">
+						<li>About</li>
+					</a>
+					<a href="products.html">
+						<li>Product</li>
+					</a>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+					<a href="https://www.instagram.com">
+						<li>Instagram</li>
+					</a>
+					<a href="https://www.facebook.com">
+						<li>Facebook</li>
+					</a>
+					<a href="https://www.twitter.com">
+						<li>Twitter</li>
+					</a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - Rafie Haidar</p>
+		</div>
+	</div>
+
+<!----------------js for toggle menu---------------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight = "0px")
+				{
+					MenuItems.style.maxHeight = "200px"
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px"
+				}
+		}
+	</script>
+
+</body>
+</html>
